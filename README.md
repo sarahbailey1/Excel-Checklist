@@ -58,11 +58,14 @@ Sub SetRowHeight()
 End Sub
 ```
 ****************************************************************************************************************************************
-# Formula for 'Progress' column
+**Formula for 'Progress' column**
 ```
 =IF(COUNTA(K12B5:F2) = 0, "", REPT("|", COUNTIF(B2:F2, TRUE) / COUNTA(B2:F2) * 100) & " " & TEXT(COUNTIF(B2:F2, TRUE) / COUNTA(B2:F2), "0%"))
 ```
-Conditional Formulas Based on Progress Ranges
+
+
+
+**Conditional Formulas Based on Progress Ranges**
 These formulas check the percentage of TRUE values in the range B2:F2 and return TRUE or FALSE based on predefined percentage ranges.
 ```
 =COUNTIF(B2:F2, TRUE)/COUNTA(B2:F2) = 0
